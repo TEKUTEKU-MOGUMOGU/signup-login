@@ -32,11 +32,4 @@ function makeRegistrationTable() {
   $stmt = $pdo->query($sql);
 }
 
-function delete() {
-  $pdo = dbconnect();
-
-  $sql = "DROP TABLE IF NOT EXISTS pre_company, pre_user, company, user";
-  $stmt = $pdo->query($sql);
-}
-
 ?>
